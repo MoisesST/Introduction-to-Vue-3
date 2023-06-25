@@ -1,5 +1,23 @@
 <template>
   <div>
+    <h1 :class="{ 'title': false, 'title-home': isHome }">
+      My first Vue project
+    </h1>
+
+    <p :class="pClass">
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque odio
+      consequatur possimus officia dolor eius, labore fugiat temporibus, 
+      expedita tempora quae deleniti, doloremque officiis quaerat inventore illo
+      ipsam a sapiente!
+    </p>
+
+    <p :style="styleClasse">
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque odio
+      consequatur possimus officia dolor eius, labore fugiat temporibus, 
+      expedita tempora quae deleniti, doloremque officiis quaerat inventore illo
+      ipsam a sapiente!
+    </p>
+
     <div
       v-for="(obj, index) in todos"
       :key="obj.id"
@@ -18,6 +36,9 @@
   export default {
     data() {
       return {
+        isHome: true,
+        pClass: ['text', 'text-home'],
+        styleClasse: { 'color': 'aqua', backgroundColor: '#000' },
         todos: [
           {
             "userId": 1,
@@ -58,6 +79,20 @@
 </script>
 
 <style>
+  .title-home {
+    font-size: 40px;
+    color: #0f0;
+  }
+  .title {
+    font-size: 20px;
+    color: #00f;
+  }
+  .text {
+    color:#f00;
+  }
+  .text-home {
+    color: #42b;
+  }
   .todos-item {
     margin: 0 0 5px 0;
     padding: 3px 6px;
