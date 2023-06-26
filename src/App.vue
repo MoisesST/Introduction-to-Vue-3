@@ -42,6 +42,12 @@
   </div>
 
   <BaseCard />
+
+  <BaseAlert
+    :variant="variant"
+  >
+    {{ text }}
+  </BaseAlert>
 </template>
 
 <script>
@@ -54,6 +60,7 @@ import ThePropsComputed from '@/components/ThePropsComputed'
 import TheWatch from '@/components/TheWatch'
 import TheLifeCycle from '@/components/TheLifeCycle'
 import BaseCard from '@/components/BaseCard'
+import BaseAlert from '@/components/BaseAlert'
 
 export default {
   name: 'App',
@@ -66,7 +73,8 @@ export default {
     TheWatch,
     TheLifeCycle,
     TheTitle,
-    BaseCard
+    BaseCard,
+    BaseAlert
 },
   data() {
     return {
@@ -74,7 +82,9 @@ export default {
       firstName: 'Moisés',
       lastName: 'Teixeira',
       showName: false,
-      accessLevel: 'admin'
+      accessLevel: 'admin',
+      variant: 'success',
+      text: 'Your form has been sent successfully! hehe'
     }
   }
 }
