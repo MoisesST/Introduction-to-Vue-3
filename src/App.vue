@@ -5,6 +5,8 @@
 
   <TheEvents />
 
+  <ThePropsComputed />
+
   <div v-show="showName">
     Name: {{ firstName }} <br>
     Last Name: {{ lastName }}
@@ -20,10 +22,11 @@
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-import TheHeader from './components/TheHeader.vue'
-import TheForm from './components/TheForm.vue'
-import TheEvents from './components/TheEvents.vue'
+import HelloWorld from './components/HelloWorld'
+import TheHeader from './components/TheHeader'
+import TheForm from './components/TheForm'
+import TheEvents from './components/TheEvents'
+import ThePropsComputed from './components/ThePropsComputed'
 
 export default {
   name: 'App',
@@ -31,8 +34,9 @@ export default {
     HelloWorld,
     TheHeader,
     TheForm,
-    TheEvents
-  },
+    TheEvents,
+    ThePropsComputed
+},
   data() {
     return {
       showHeader: true,
