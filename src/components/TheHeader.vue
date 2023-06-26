@@ -4,16 +4,16 @@
       My first Vue project
     </h1>
 
-    <p :class="pClass">
+    <!-- <p :class="pClass">
       Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque odio
-      consequatur possimus officia dolor eius, labore fugiat temporibus, 
+      consequatur possimus officia dolor eius, labore fugiat temporibus,
       expedita tempora quae deleniti, doloremque officiis quaerat inventore illo
       ipsam a sapiente!
     </p>
 
     <p :style="styleClasse">
       Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque odio
-      consequatur possimus officia dolor eius, labore fugiat temporibus, 
+      consequatur possimus officia dolor eius, labore fugiat temporibus,
       expedita tempora quae deleniti, doloremque officiis quaerat inventore illo
       ipsam a sapiente!
     </p>
@@ -28,7 +28,7 @@
         :src="obj.imgSrc"
       >
       {{ index }} - {{ obj.title }}
-    </div>
+    </div> -->
   </div>
 </template>
 
@@ -73,6 +73,25 @@
             "completed": false
           }
         ]
+      }
+    },
+    mounted() {
+      window.addEventListener('resize', this.resize)
+    },
+    beforeUnmount() {
+      console.log("beforeUnmount");
+      console.log("State:", this.name);
+      console.log("DOM:", this.$el);
+      window.removeEventListener('resize', this.resize)
+    },
+    unmounted() {
+      console.log("unmounted");
+      console.log("State:", this.name);
+      console.log("DOM:", this.$el);
+    },
+    methods: {
+      resize($evt) {
+        console.log($evt);
       }
     }
   }

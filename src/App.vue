@@ -9,6 +9,8 @@
 
   <TheWatch/>
 
+  <TheLifeCycle />
+
   <div v-show="showName">
     Name: {{ firstName }} <br>
     Last Name: {{ lastName }}
@@ -30,7 +32,7 @@ import TheForm from './components/TheForm'
 import TheEvents from './components/TheEvents'
 import ThePropsComputed from './components/ThePropsComputed'
 import TheWatch from './components/TheWatch'
-
+import TheLifeCycle from './components/TheLifeCycle'
 
 export default {
   name: 'App',
@@ -40,7 +42,8 @@ export default {
     TheForm,
     TheEvents,
     ThePropsComputed,
-    TheWatch
+    TheWatch,
+    TheLifeCycle
 },
   data() {
     return {
