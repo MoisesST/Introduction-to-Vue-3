@@ -44,7 +44,9 @@
   <BaseCard />
 
   <BaseAlert
+    v-if="showAlert"
     :variant="variant"
+    @close="onClose"
   >
     {{ text }}
   </BaseAlert>
@@ -84,7 +86,14 @@ export default {
       showName: false,
       accessLevel: 'admin',
       variant: 'success',
-      text: 'Your form has been sent successfully! hehe'
+      text: 'Your form has been sent successfully! hehe',
+      showAlert: true
+    }
+  },
+  methods: {
+    onClose() {
+      this.showAlert = false
+      console.log('On Close')
     }
   }
 }
