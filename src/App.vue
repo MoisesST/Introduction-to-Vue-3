@@ -32,17 +32,28 @@
   <img alt="Vue logo" src="./assets/logo.png">
 
   <HelloWorld msg="Welcome to Your Vue.js App"/>
+
+  <BaseCard />
+
+  <div class="card">
+    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores placeat
+    itaque labore, obcaecati dolorum, ipsam ipsa, iure nam minus excepturi
+    cumque voluptates provident laboriosam nulla aliquam! Quos eveniet non vel?
+  </div>
+
+  <BaseCard />
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld'
-import TheHeader from './components/TheHeader'
-import TheTitle from './components/TheTitle'
-import TheForm from './components/TheForm'
-import TheEvents from './components/TheEvents'
-import ThePropsComputed from './components/ThePropsComputed'
-import TheWatch from './components/TheWatch'
-import TheLifeCycle from './components/TheLifeCycle'
+import HelloWorld from '@/components/HelloWorld'
+import TheHeader from '@/components/TheHeader'
+import TheTitle from '@/components/TheTitle'
+import TheForm from '@/components/TheForm'
+import TheEvents from '@/components/TheEvents'
+import ThePropsComputed from '@/components/ThePropsComputed'
+import TheWatch from '@/components/TheWatch'
+import TheLifeCycle from '@/components/TheLifeCycle'
+import BaseCard from '@/components/BaseCard'
 
 export default {
   name: 'App',
@@ -54,7 +65,8 @@ export default {
     ThePropsComputed,
     TheWatch,
     TheLifeCycle,
-    TheTitle
+    TheTitle,
+    BaseCard
 },
   data() {
     return {
