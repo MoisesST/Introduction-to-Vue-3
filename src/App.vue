@@ -1,6 +1,8 @@
 <template>
   <TheHeader v-if="showHeader" />
 
+  <TheForm />
+
   <div v-show="showName">
     Name: {{ firstName }} <br>
     Last Name: {{ lastName }}
@@ -18,12 +20,15 @@
 <script>
 import HelloWorld from './components/HelloWorld.vue'
 import TheHeader from './components/TheHeader.vue'
+import TheForm from './components/TheForm.vue'
+
 
 export default {
   name: 'App',
   components: {
     HelloWorld,
-    TheHeader
+    TheHeader,
+    TheForm
   },
   data() {
     return {
