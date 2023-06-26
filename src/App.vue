@@ -1,6 +1,15 @@
 <template>
   <TheHeader v-if="showHeader" />
 
+  <TheTitle>
+    <!-- <template v-slot:title>
+      <h1>App</h1>
+    </template> -->
+    <template v-slot:description>
+      <p>My mango</p>
+    </template>
+  </TheTitle>
+
   <TheForm />
 
   <TheEvents />
@@ -28,6 +37,7 @@
 <script>
 import HelloWorld from './components/HelloWorld'
 import TheHeader from './components/TheHeader'
+import TheTitle from './components/TheTitle'
 import TheForm from './components/TheForm'
 import TheEvents from './components/TheEvents'
 import ThePropsComputed from './components/ThePropsComputed'
@@ -43,7 +53,8 @@ export default {
     TheEvents,
     ThePropsComputed,
     TheWatch,
-    TheLifeCycle
+    TheLifeCycle,
+    TheTitle
 },
   data() {
     return {
