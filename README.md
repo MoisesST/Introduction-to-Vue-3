@@ -4,7 +4,7 @@
 
 <br>
 
-In this project we will work with vue cli and you can follow this tutorial or check the official [documentation](https://cli.vuejs.org/guide/installation.html).
+In this project we will work with **Vue CLI** and you can follow this tutorial or check the official [documentation](https://cli.vuejs.org/guide/installation.html).
 
 <br>
 
@@ -32,7 +32,7 @@ If the **command is not found**, you can fix it by following the steps below or 
 
 <br>
 
-In the terminal paste the command below and run it
+In the terminal paste the command below and run it.
 
 ```sh
 sudo nano ~/.<shell-name>rc
@@ -40,7 +40,7 @@ sudo nano ~/.<shell-name>rc
 
 <br>
 
-when opening it paste the following command at the end of the file
+when opening it paste the following command at the end of the file.
 
 ```sh
 export PATH=$PATH:/Users/<user>/.npm-global/bin
@@ -50,7 +50,7 @@ export PATH=$PATH:/home/<user>/.yarn/bin
 
 <br>
 
-To save just press **Ctrl+O**, **Enter** and **Ctrl+X**, then close the terminal, open it again and run command ` vue --version`
+To save just press **Ctrl+O**, **Enter** and **Ctrl+X**, then close the terminal, open it again and run command ` vue --version`.
 
 <br>
 
@@ -82,9 +82,25 @@ You are now ready to start developing.
 
 <br>
 
-## References
+## Installing Vuex
 
 <br>
+
+To install **Vuex** just run the following command.
+
+```sh
+npm install vuex@next --save
+# Or
+yarn add vuex@next --save
+```
+
+<br>
+
+Once installed, you just need to create a folder inside `src/`, `store/index.js` and make the necessary changes for your project, see the [documentation](https://vuex.vuejs.org/).
+
+<br>
+
+## References
 
 ### Free course by Tiago Matos
 
@@ -99,3 +115,5 @@ You are now ready to start developing.
   - [Vue.js](https://vuejs.org/)
 
   - [Vue CLI](https://cli.vuejs.org/)
+
+  - [Vuex](https://vuex.vuejs.org/)
