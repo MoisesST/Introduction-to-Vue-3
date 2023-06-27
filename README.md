@@ -4,7 +4,7 @@
 
 <br>
 
-In this project we will work with vue cli and you can follow this tutorial or check the official [documentation](https://cli.vuejs.org/guide/installation.html).
+In this project we will work with **Vue CLI** and you can follow this tutorial or check the official [documentation](https://cli.vuejs.org/guide/installation.html).
 
 <br>
 
@@ -32,7 +32,7 @@ If the **command is not found**, you can fix it by following the steps below or 
 
 <br>
 
-In the terminal paste the command below and run it
+In the terminal paste the command below and run it.
 
 ```sh
 sudo nano ~/.<shell-name>rc
@@ -40,7 +40,7 @@ sudo nano ~/.<shell-name>rc
 
 <br>
 
-when opening it paste the following command at the end of the file
+when opening it paste the following command at the end of the file.
 
 ```sh
 export PATH=$PATH:/Users/<user>/.npm-global/bin
@@ -50,7 +50,7 @@ export PATH=$PATH:/home/<user>/.yarn/bin
 
 <br>
 
-To save just press **Ctrl+O**, **Enter** and **Ctrl+X**, then close the terminal, open it again and run command ` vue --version`
+To save just press **Ctrl+O**, **Enter** and **Ctrl+X**, then close the terminal, open it again and run command ` vue --version`.
 
 <br>
 
@@ -82,9 +82,24 @@ You are now ready to start developing.
 
 <br>
 
-## References
+## Installing the Vue Router
 
 <br>
+
+To install **Vue Router** you need the following command.
+
+```sh
+npm install vue-router@4
+# Or
+yarn add vue-router@4
+```
+<br>
+
+Once installed, you need to create inside `src/` two folders, `routes/index.js` and `views/`. then make the changes as the [documentation](https://router.vuejs.org/) shows, this [video](https://www.youtube.com/watch?v=1vvpGoFjba4&ab_channel=ClubeFull-Stack) might help you.
+
+<br>
+
+## References:
 
 ### Free course by Tiago Matos
 
@@ -94,8 +109,16 @@ You are now ready to start developing.
 
   - Facebook : [TiagoMatos - webdeveloper](https://www.facebook.com/tiagomatosweb)
 
+### Complementary Videos
+
+  - Channel: [Clube Full-Stack](https://www.youtube.com/@AlexandreCardoso)
+
+    - Video : [Rotas no Vue | Como trabalhar com o vue-router no vue 3](https://www.youtube.com/watch?v=1vvpGoFjba4&ab_channel=ClubeFull-Stack)
+
 ### Official documentation
 
   - [Vue.js](https://vuejs.org/)
 
   - [Vue CLI](https://cli.vuejs.org/)
+
+  - [Vue Router](https://router.vuejs.org/)

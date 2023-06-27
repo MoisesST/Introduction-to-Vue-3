@@ -1,15 +1,18 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <nav>
+    <RouterLink to="/">Home</RouterLink>
+    <RouterLink to="/about">About</RouterLink>
+    <RouterLink :to="dynamicRoute">Services</RouterLink>
+    <RouterView />
+  </nav>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
 export default {
-  name: 'App',
-  components: {
-    HelloWorld
+  data() {
+    return {
+      dynamicRoute: { name: 'services'}
+    }
   }
 }
 </script>
@@ -22,5 +25,13 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+nav {
+  padding: 30px;
+}
+nav a {
+  margin: 3px;
+  font-weight: bold;
+  color: #2c3e50;
 }
 </style>
