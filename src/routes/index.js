@@ -1,4 +1,4 @@
-import { createRouter, createWebHashHistory } from "vue-router"
+import { createRouter, createWebHistory } from "vue-router"
 
 const routes = [
   {
@@ -15,11 +15,16 @@ const routes = [
     path: '/services',
     name: 'services',
     component: () => import('../views/ServicesView')
+  },
+  {
+    path: '/users/:id',
+    name: 'edit-users',
+    component: () => import('../views/UserEditView')
   }
 ]
 
 const router = createRouter({
-  history: createWebHashHistory(),
+  history: createWebHistory(),
   routes,
 })
 export default router
